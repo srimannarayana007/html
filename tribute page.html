@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="grid-container">
+        <header class="header">
+            <h1>SANJAY SRIMANNARAYANA </h1>
+            <p>FRONT END DEVELOPER</p>
+        </header>
+        <section class="image-section">
+            <img src="c:\Users\dell\Downloads\profile pic.jpeg" alt="Albert Einstein">
+        </section>
+        <section class="bio-section">
+            <h2>Bio</h2>
+            <p>SANJAY SRIMANNARAYANA (1996-2080) was a front end developer.</p>
+
+            <p>"sanjay  was born on may  05, 1996, in andhra  pradesh , Guntur(d).</p>
+
+            <p>He grew up in a middle-class  family and had an early interest on software developer.</p>
+
+            <p>NO MATTER WHAT PEPOPLE TELL YOU,WORDS AND IDEAS CAN CHANGE THE WORLD".</p>
+        </section>
+        <section class="quote-section">
+            <h2>Quote</h2>
+            <blockquote>
+                <p>"Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world."</p>
+                <cite> sanjay </cite>
+            </blockquote>
+        </section>
+        <footer class="footer">
+            <p>&copy;  08-08-2024 sanjay srimannarayana </p>
+        </footer>
+    </main>
+</body>
+</html>
+<style>
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 80px 250px 170px 50px;
+    gap: 10px;
+}
+
+.header {
+    grid-column: 1 / -1;
+    background-color: #cfcfe3;
+    color: #0b0a0a;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-section {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bio-section {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 20px;
+}
+
+.quote-section {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    padding: 20px;
+    background-color: #c9d4c9;
+}
+
+.quote-section blockquote {
+    font-style: italic;
+}
+
+.quote-section cite {
+    font-size: 0.8em;
+    color: #dee9eb;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    background-color: #564a4a;
+    color: #ecdde7;
+    padding: 10px;
+    text-align: center;
+}
